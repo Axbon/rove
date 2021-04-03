@@ -1,0 +1,11 @@
+node_modules
+.vscode
+yarn-error.log
+.env
+build
+certificates
+.env.dev
+.env
+.DS_Store
+!*/tests/tmp_migrations/1616845690588-newtest.sql
+!*/tests/tmp_migrations/1616847385068-secondtest.sql
