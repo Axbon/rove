@@ -59,34 +59,34 @@ _"migrations"_ by default. If you wish to disable rove cli output/logging, set _
 
 #### Cli Examples
 
-Creating migrations:
+Creating migrations: (Use npx rove, or yarn rove) depending on what pkgmanager you use
 
 ```
-rove create customer-table
+yarn rove create customer-table
 ```
 
 Running (all) migrations
 
 ```
-rove migrate
+yarn rove migrate
 ```
 
 Running migrations up to and including 123-x-migration.sql
 
 ```
-rove migrate to 123-x-migration.sql
+yarn rove migrate to 123-x-migration.sql
 ```
 
 Revert last migration (Only 1)
 
 ```
-rove revert
+yarn rove revert
 ```
 
 Revert all migrations until and including 123-x-migration.sql
 
 ```
-rove revert to 123-x-migration.sql
+yarn rove revert to 123-x-migration.sql
 ```
 
 ### Api
