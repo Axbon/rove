@@ -1,6 +1,6 @@
 {
   "name": "ts-rove",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple database migration api and cli for postgres",
   "main": "./build/apis.js",
   "author": "Axbon",
