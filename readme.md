@@ -91,7 +91,7 @@ rove revert to 123-x-migration.sql
 
 ### Api
 
-You can use the api for customized approach. In the case where you have multiple
+You can use the api for a customized approach. In the case where you have multiple
 database servers or similar.
 
 You need to use the pg package to supply the database adapter to rove.
@@ -190,3 +190,5 @@ create table science (
 
 drop table science
 ```
+
+## License MIT
