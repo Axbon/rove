@@ -99,7 +99,7 @@ https://github.com/brianc/node-postgres
 
 ```js
 import pg from 'pg';
-import { revert, migrate, create } from 'rove';
+import { revert, migrate, create } from 'ts-rove';
 
 //Note: never put db connection string in code, use env-variables for this.
 const client = new pg.Client({
