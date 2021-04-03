@@ -12,8 +12,6 @@ export const sqlCreateMigrationsTable = `
   );
 `;
 
-//    migration_time TIMESTAMP NOT NULL
-
 export const sqlGetMigrations = `SELECT version FROM ${getMigrationTableName()} ORDER BY migration_time DESC`;
 export const sqlGetLastMigration = `SELECT version, migration_time FROM ${getMigrationTableName()} ORDER BY migration_time DESC LIMIT 1`;
 
