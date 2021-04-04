@@ -19,6 +19,15 @@
     "ts-jest": "^26.5.4",
     "typescript": "^4.2.3"
   },
+  "keywords": [
+    "postgres",
+    "migration",
+    "sql",
+    "database",
+    "pg",
+    "postgresql",
+    "rdbms"
+],
   "repository": {
     "url": "https://github.com/Axbon/rove",
     "type": "git"
