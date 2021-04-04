@@ -48,7 +48,7 @@ export const migrate: CmdFN<CmdProps, string[]> = async ({
 	const { rows } = await client.query(sqlGetMigrations);
 	const files = getMigrationFiles(migrationDir);
 	const target = to ?? files[files.length - 1];
-	const indexOfTarget = files.findIndex((f) => f === target);
+	const indexOfTarget = files.indexOf(target);
 	const doesNotExist = indexOfTarget === -1;
 
 	if (doesNotExist) {
@@ -85,8 +85,8 @@ export const revert: CmdFN<CmdProps, string[]> = async ({
 
 	const files = getMigrationFiles(migrationDir);
 	const rev = to ?? row.version;
-	const indexOfLast = files.findIndex((f) => f === row.version);
-	const indexOfTarget = files.findIndex((f) => f === rev);
+	const indexOfLast = files.indexOf(row.version);
+	const indexOfTarget = files.indexOf(rev);
 	const doesNotExist = indexOfTarget === -1;
 
 	if (doesNotExist) {
