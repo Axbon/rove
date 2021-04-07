@@ -103,34 +103,34 @@ import { revert, migrate, create } from 'ts-rove';
 
 //Note: never put db connection string in code, use env-variables for this.
 const client = new pg.Client({
-	user: 'mydbuser',
-	host: 'localhost',
-	database: 'rovedbtest',
-	password: '',
-	port: 5432,
+  user: 'mydbuser',
+  host: 'localhost',
+  database: 'rovedbtest',
+  password: '',
+  port: 5432,
 });
 
 const run = async () => {
-	await client.connect();
+  await client.connect();
 
-	/* 
+  /* 
      Apply all migrations to the currently connected db (client)
      migrationDir is the name of the dir containing the .sql migration files
      to is optional
      
      Rove will automatically call client.end() when finished
      */
-	const roveArgs = {
-		client,
-		migrationDir: 'dir-containing-migrations',
-	};
-	try {
-		await migrate(roveArgs);
-	} catch (e) {
-		//Handle any errors. Note, if any exceptions are thrown, migrations are not commited.
-		client.end();
-	}
-	//done
+  const roveArgs = {
+    client,
+    migrationDir: 'dir-containing-migrations',
+  };
+  try {
+    await migrate(roveArgs);
+  } catch (e) {
+    //Handle any errors. Note, if any exceptions are thrown, migrations are not commited.
+    client.end();
+  }
+  //done
 };
 ```
 
@@ -147,10 +147,10 @@ for(const client of dbClients){
 	await client.connect();
 
 
-	const roveArgs = {
-		client,
-		migrationDir: 'dir-containing-migrations',
-	};
+const roveArgs = {
+	client,
+	migrationDir: 'dir-containing-migrations',
+};
 	try {
 		await migrate(roveArgs);
 	} catch (e) {

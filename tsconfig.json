@@ -1,21 +1,21 @@
 {
-	"compilerOptions": {
-		"allowJs": true,
-		"allowSyntheticDefaultImports": true,
-		"baseUrl": "src",
-		"esModuleInterop": true,
-		"moduleResolution": "node",
-		"module": "commonjs",
-		"strict": true,
-		"lib": ["esnext"],
-		"outDir": "./build",
-		"sourceMap": true,
-		"target": "es2015",
-		"skipLibCheck": true,
-		"declaration": true
-	},
-	"include": ["src/**/*"],
-	"exclude": ["./node_modules/*", "./config/*"],
-	"noUnusedLocals": true,
-	"noUnusedParameters": true
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "strict": true,
+    "lib": ["esnext"],
+    "outDir": "./build",
+    "sourceMap": true,
+    "target": "es2015",
+    "skipLibCheck": true,
+    "declaration": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["./node_modules/*", "./config/*"],
+  "noUnusedLocals": true,
+  "noUnusedParameters": true
 }

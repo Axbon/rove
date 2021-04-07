@@ -1,8 +1,8 @@
 import dotenv from 'dotenv';
 
 export const getMigrationTableName = () => {
-	const { parsed: envVars } = dotenv.config();
-	return envVars?.ROVE_MIGRATIONS_TABLE ?? 'migrations';
+  const { parsed: envVars } = dotenv.config();
+  return envVars?.ROVE_MIGRATIONS_TABLE ?? 'migrations';
 };
 
 export const sqlCreateMigrationsTable = `
